@@ -145,29 +145,7 @@
   <!-- KPI Row -->
   <div class="kpi-row" id="kpiRow"></div>
 
-  <!-- Week Containers -->
-  <div class="section-title">📦 이번 주 컨테이너 일정</div>
 
-  <div class="filter-row">
-    <button class="filter-btn active" onclick="setFilter('ALL')">ALL</button>
-    <button class="filter-btn lf"     onclick="setFilter('LF')">LF</button>
-    <button class="filter-btn hf"     onclick="setFilter('HF')">HF</button>
-    <button class="filter-btn dd"     onclick="setFilter('DD')">DD</button>
-  </div>
-
-  <div class="week-grid" id="weekGrid"></div>
-
-  <!-- Article List Panel (shown on container click) -->
-  <div class="article-panel" id="articlePanel">
-    <div class="article-panel-header">
-      <div>
-        <div class="article-panel-title" id="panelTitle"></div>
-        <div class="article-panel-meta" id="panelMeta"></div>
-      </div>
-      <button class="article-panel-close" onclick="closePanel()">✕</button>
-    </div>
-    <div id="panelTableWrap"></div>
-  </div>
 
   <!-- Article Search -->
   <div class="section-title">🔍 아티클 번호 검색</div>
@@ -194,6 +172,31 @@
     </div>
     <div class="scroll-hint" id="scrollHint"></div>
   </div>
+
+    <!-- Week Containers -->
+  <div class="section-title">📦 이번 주 컨테이너 일정</div>
+
+  <div class="filter-row">
+    <button class="filter-btn active" onclick="setFilter('ALL')">ALL</button>
+    <button class="filter-btn lf"     onclick="setFilter('LF')">LF</button>
+    <button class="filter-btn hf"     onclick="setFilter('HF')">HF</button>
+    <button class="filter-btn dd"     onclick="setFilter('DD')">DD</button>
+  </div>
+
+  <div class="week-grid" id="weekGrid"></div>
+
+  <!-- Article List Panel (shown on container click) -->
+  <div class="article-panel" id="articlePanel">
+    <div class="article-panel-header">
+      <div>
+        <div class="article-panel-title" id="panelTitle"></div>
+        <div class="article-panel-meta" id="panelMeta"></div>
+      </div>
+      <button class="article-panel-close" onclick="closePanel()">✕</button>
+    </div>
+    <div id="panelTableWrap"></div>
+  </div>
+
 
 </div>
 
@@ -279,9 +282,6 @@ function buildWeek() {
                       onclick="selectContainer('${c.container}')">
           <span class="cont-type type-${typeLow}">${c.type}</span>
           <div class="cont-no">${c.container}</div>
-          <div class="cont-bl">${c.bl}</div>
-          <div class="cont-carrier" title="${c.carrier}">${c.carrier}</div>
-          <span class="cont-stat">통관: ${c.csmStat}</span>
         </div>`;
       });
     }
