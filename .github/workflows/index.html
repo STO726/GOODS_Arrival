@@ -208,10 +208,16 @@ let selectedContainer = null;
 let acItems = [];
 let acSel = -1;
 
-// ── Init ──
 document.addEventListener('DOMContentLoaded', () => {
+  const today = new Date();
+  const nextWeek = new Date();
+  nextWeek.setDate(today.getDate() + 7);
+
+  const formatDate = (date) => `${date.getMonth() + 1}/${date.getDate()}`;
+
   document.getElementById('todayLabel').textContent =
-    'Today: ' + new Date('2026-07-10').toLocaleDateString('ko-KR');
+    `${formatDate(today)} ~ ${formatDate(nextWeek)}`;
+
   buildKPI();
   buildWeek();
 });
