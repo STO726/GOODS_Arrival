@@ -6,7 +6,7 @@
 <title>Logistics Dashboard</title>
 <style>
   *{box-sizing:border-box;margin:0;padding:0}
-  body{font-family:'Segoe UI',sans-serif;background:#f0f2f5;color:#222;min-height:100vh}
+  body{font-family:'Noto IKEA Korean';background:#f0f2f5;color:#222;min-height:100vh}
 
   /* ── Header ── */
   .header{background:linear-gradient(135deg,#1a237e 0%,#283593 60%,#3949ab 100%);
@@ -25,7 +25,7 @@
   .kpi-card.lf{border-top-color:#1976d2;background:linear-gradient(135deg,#e3f2fd 0%,#fff 60%)}
   .kpi-card.hf{border-top-color:#388e3c;background:linear-gradient(135deg,#e8f5e9 0%,#fff 60%)}
   .kpi-card.dd{border-top-color:#f57c00;background:linear-gradient(135deg,#fff3e0 0%,#fff 60%)}
-  .kpi-label{font-size:.75rem;color:#888;text-transform:uppercase;letter-spacing:.6px;margin-bottom:6px}
+  .kpi-label{font-size:.75rem;color:#000;font-weight:700;text-transform:uppercase;letter-spacing:.6px;margin-bottom:6px}
   .kpi-value{font-size:2rem;font-weight:700;color:#1a237e}
   .kpi-card.lf .kpi-value{color:#1565c0}
   .kpi-card.hf .kpi-value{color:#2e7d32}
@@ -145,7 +145,7 @@
 <div class="header">
   <div>🚢</div>
   <h1>Logistics Dashboard</h1>
-  <span id="todayLabel">Today: 2026. 7. 25.</span>
+  <span id="todayLabel">Today: 2026. 8. 29.</span>
 </div>
 
 <div class="main">
@@ -153,19 +153,19 @@
   <!-- KPI Row -->
   <div class="kpi-row" id="kpiRow"><div class="kpi-card">
     <div class="kpi-label">이번 주 전체 컨테이너</div>
-    <div class="kpi-value">12</div>
+    <div class="kpi-value">7</div>
     <div class="kpi-sub">7/10 ~ 7/16</div>
   </div><div class="kpi-card lf">
       <div class="kpi-label">LF 컨테이너</div>
-      <div class="kpi-value">4</div>
+      <div class="kpi-value">3</div>
       <div class="kpi-sub">컨테이너</div>
     </div><div class="kpi-card hf">
       <div class="kpi-label">HF 컨테이너</div>
-      <div class="kpi-value">3</div>
+      <div class="kpi-value">1</div>
       <div class="kpi-sub">컨테이너</div>
     </div><div class="kpi-card dd">
       <div class="kpi-label">DD 컨테이너</div>
-      <div class="kpi-value">5</div>
+      <div class="kpi-value">3</div>
       <div class="kpi-sub">컨테이너</div>
     </div></div>
 
@@ -223,18 +223,110 @@
     <button class="filter-btn dd" onclick="setFilter(&#39;DD&#39;)">DD</button>
   </div>
 
-  <div class="week-grid" id="weekGrid"></div>
+  <div class="week-grid" id="weekGrid"><div class="day-col today">
+      <div class="day-header">
+        <span class="dow">토</span>
+        <span>8/29</span>
+      </div><div class="cont-card dd " onclick="selectContainer(&#39;OOCU8504293&#39;)">
+          <div class="cont-card-header">
+            <span class="cont-type type-dd">DD</span>
+            
+          </div>
+          <div class="cont-no">OOCU8504293</div>
+        </div><div class="cont-card hf " onclick="selectContainer(&#39;TCNU2566760&#39;)">
+          <div class="cont-card-header">
+            <span class="cont-type type-hf">HF</span>
+            
+          </div>
+          <div class="cont-no">TCNU2566760</div>
+        </div></div><div class="day-col ">
+      <div class="day-header">
+        <span class="dow">일</span>
+        <span>8/30</span>
+      </div><div class="cont-card lf " onclick="selectContainer(&#39;KMTU9490381&#39;)">
+          <div class="cont-card-header">
+            <span class="cont-type type-lf">LF</span>
+            
+          </div>
+          <div class="cont-no">KMTU9490381</div>
+        </div><div class="cont-card dd active" onclick="selectContainer(&#39;SEKU1029018&#39;)">
+          <div class="cont-card-header">
+            <span class="cont-type type-dd">DD</span>
+            
+          </div>
+          <div class="cont-no">SEKU1029018</div>
+        </div></div><div class="day-col ">
+      <div class="day-header">
+        <span class="dow">월</span>
+        <span>8/31</span>
+      </div><div class="cont-card dd " onclick="selectContainer(&#39;OOLU8954764&#39;)">
+          <div class="cont-card-header">
+            <span class="cont-type type-dd">DD</span>
+            
+          </div>
+          <div class="cont-no">OOLU8954764</div>
+        </div></div><div class="day-col ">
+      <div class="day-header">
+        <span class="dow">화</span>
+        <span>9/1</span>
+      </div><div class="cont-card lf " onclick="selectContainer(&#39;MSKU5463723&#39;)">
+          <div class="cont-card-header">
+            <span class="cont-type type-lf">LF</span>
+            
+          </div>
+          <div class="cont-no">MSKU5463723</div>
+        </div></div><div class="day-col ">
+      <div class="day-header">
+        <span class="dow">수</span>
+        <span>9/2</span>
+      </div><div class="no-cont">-</div></div><div class="day-col ">
+      <div class="day-header">
+        <span class="dow">목</span>
+        <span>9/3</span>
+      </div><div class="no-cont">-</div></div><div class="day-col ">
+      <div class="day-header">
+        <span class="dow">금</span>
+        <span>9/4</span>
+      </div><div class="cont-card lf " onclick="selectContainer(&#39;CAIU6262843&#39;)">
+          <div class="cont-card-header">
+            <span class="cont-type type-lf">LF</span>
+            
+          </div>
+          <div class="cont-no">CAIU6262843</div>
+        </div></div></div>
 
   <!-- Article List Panel (shown on container click) -->
-  <div class="article-panel" id="articlePanel">
+  <div class="article-panel visible" id="articlePanel">
     <div class="article-panel-header">
       <div>
-        <div class="article-panel-title" id="panelTitle"></div>
-        <div class="article-panel-meta" id="panelMeta"></div>
+        <div class="article-panel-title" id="panelTitle">📦 SEKU1029018  (DD)</div>
+        <div class="article-panel-meta" id="panelMeta">BL: EGLV003600846496  |  운송사: EVERGREEN LINE  |  입고 예정일: 2026-08-30  |  통관: 420  |  CBM: 0.73</div>
       </div>
-      <button class="article-panel-close" onclick="closePanel()">&#x2715;</button>
+      <button class="article-panel-close" onclick="closePanel()">✕</button>
     </div>
-    <div id="panelTableWrap"></div>
+    <div id="panelTableWrap">
+      <div style="overflow-x:auto">
+      <table class="article-table">
+        <thead><tr>
+          <th>ItemNo</th><th class="col-name">품명</th><th>PA</th><th>TYPE</th><th style="text-align:right">수량(Qty)</th><th>LatestRCVDate</th><th>매장 입고 예정일</th><th>GD/GY</th><th>BL</th><th>Container</th><th>SSD</th><th>EDS</th>
+        </tr></thead>
+        <tbody><tr>
+        <td><strong>70569244</strong></td>
+        <td class="col-name" title="FLYGFISK place mat 38x30 light beige AP">FLYGFISK place mat 38x30 light beige AP</td>
+        <td>1541</td>
+        <td><span class="badge-type type-dd">DD</span></td>
+        <td style="text-align:right">4,800</td>
+        <td>2026-08-03</td>
+        <td><span class="planned-date">2026-08-30</span></td>
+        <td style="text-align:center"><span class="badge-gy">GY</span></td>
+        <td style="font-size:.75rem">EGLV003600846496</td>
+        <td style="font-size:.75rem;word-break:break-all">SEKU1029018</td>
+        <td>2023-10-01</td>
+        <td>-</td>
+      </tr></tbody>
+      </table>
+      </div>
+      <div class="result-count" style="margin-top:8px">총 1개 아티클</div></div>
   </div>
 
 
