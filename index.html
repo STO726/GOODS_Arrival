@@ -467,7 +467,7 @@ let acSel = -1;
 // ── Init ──
 document.addEventListener('DOMContentLoaded', () => {
   document.getElementById('todayLabel').textContent =
-    'Today: ' + new Date('2026-09-25').toLocaleDateString('ko-KR');
+    'Today: ' + new Date('2026-09-26').toLocaleDateString('ko-KR');
   buildKPI();
   buildWeek();
 });
@@ -500,7 +500,7 @@ function buildKPI() {
 const DAYS = ['일','월','화','수','목','금','토'];
 const DATES = [];
 for(let i=0;i<7;i++){
-  const d = new Date('2026-09-25');
+  const d = new Date('2026-09-26');
   d.setDate(d.getDate()+i);
   DATES.push(d);
 }
