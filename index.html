@@ -154,7 +154,7 @@
 <div class="header">
   <div>🚢</div>
   <h1>Logistics Dashboard</h1>
-  <span id="todayLabel">Today: 2026. 9. 16.</span>
+  <span id="todayLabel">Today</span>
 </div>
 
 <div class="main">
@@ -162,19 +162,19 @@
   <!-- KPI Row -->
   <div class="kpi-row" id="kpiRow"><div class="kpi-card">
     <div class="kpi-label">이번 주 전체 컨테이너</div>
-    <div class="kpi-value">9</div>
-    <div class="kpi-sub">7/10 ~ 7/16</div>
+    <div class="kpi-value">12</div>
+    <div class="kpi-sub"></div>
   </div><div class="kpi-card lf">
       <div class="kpi-label">LF 컨테이너</div>
-      <div class="kpi-value">3</div>
+      <div class="kpi-value">2</div>
       <div class="kpi-sub">컨테이너</div>
     </div><div class="kpi-card hf">
       <div class="kpi-label">HF 컨테이너</div>
-      <div class="kpi-value">3</div>
+      <div class="kpi-value">4</div>
       <div class="kpi-sub">컨테이너</div>
     </div><div class="kpi-card dd">
       <div class="kpi-label">DD 컨테이너</div>
-      <div class="kpi-value">3</div>
+      <div class="kpi-value">6</div>
       <div class="kpi-sub">컨테이너</div>
     </div></div>
 
@@ -261,7 +261,7 @@
         </div>
       </div>
     </div>
-    <div class="result-table-wrap" id="resultWrap" style="display: block;">
+    <div class="result-table-wrap" id="resultWrap" style="display: none;">
       <table class="result-table">
         <thead>
           <tr>
@@ -333,94 +333,124 @@
 
   <div class="week-grid" id="weekGrid"><div class="day-col today">
       <div class="day-header">
+        <span class="dow">화</span>
+        <span>10/13</span>
+      </div><div class="cont-card lf " onclick="selectContainer('MRSU0374959')">
+          <div class="cont-card-header">
+            <span class="cont-type type-lf">LF</span>
+            
+          </div>
+          <div class="cont-no">MRSU0374959</div>
+          <div class="cont-bl">CSM ID: 294DT260817726679</div>
+        </div></div><div class="day-col ">
+      <div class="day-header">
         <span class="dow">수</span>
-        <span>9/16</span>
-      </div><div class="cont-card dd " onclick="selectContainer('MRSU6640737')">
+        <span>10/14</span>
+      </div><div class="cont-card hf " onclick="selectContainer('MRKU4820043')">
+          <div class="cont-card-header">
+            <span class="cont-type type-hf">HF</span>
+            
+          </div>
+          <div class="cont-no">MRKU4820043</div>
+          <div class="cont-bl">CSM ID: 258DT260904726357</div>
+        </div><div class="cont-card dd " onclick="selectContainer('MIEU4025274')">
           <div class="cont-card-header">
             <span class="cont-type type-dd">DD</span>
             
           </div>
-          <div class="cont-no">MRSU6640737</div>
-        </div><div class="cont-card hf " onclick="selectContainer('MIEU3988290')">
-          <div class="cont-card-header">
-            <span class="cont-type type-hf">HF</span>
-            
-          </div>
-          <div class="cont-no">MIEU3988290</div>
-        </div><div class="cont-card hf " onclick="selectContainer('MRKU6406726')">
-          <div class="cont-card-header">
-            <span class="cont-type type-hf">HF</span>
-            
-          </div>
-          <div class="cont-no">MRKU6406726</div>
+          <div class="cont-no">MIEU4025274</div>
+          <div class="cont-bl">CSM ID: 22715SUPECIS74601</div>
         </div></div><div class="day-col ">
       <div class="day-header">
         <span class="dow">목</span>
-        <span>9/17</span>
-      </div><div class="cont-card dd " onclick="selectContainer('TCKU7795764')">
+        <span>10/15</span>
+      </div><div class="cont-card dd " onclick="selectContainer('CAAU5980289')">
           <div class="cont-card-header">
             <span class="cont-type type-dd">DD</span>
             
           </div>
-          <div class="cont-no">TCKU7795764</div>
-        </div><div class="cont-card lf " onclick="selectContainer('UETU6954950')">
-          <div class="cont-card-header">
-            <span class="cont-type type-lf">LF</span>
-            
-          </div>
-          <div class="cont-no">UETU6954950</div>
-        </div></div><div class="day-col ">
-      <div class="day-header">
-        <span class="dow">금</span>
-        <span>9/18</span>
-      </div><div class="cont-card lf " onclick="selectContainer('MIEU3960396')">
-          <div class="cont-card-header">
-            <span class="cont-type type-lf">LF</span>
-            
-          </div>
-          <div class="cont-no">MIEU3960396</div>
-        </div></div><div class="day-col ">
-      <div class="day-header">
-        <span class="dow">토</span>
-        <span>9/19</span>
-      </div><div class="cont-card lf " onclick="selectContainer('FFAU7339088')">
-          <div class="cont-card-header">
-            <span class="cont-type type-lf">LF</span>
-            
-          </div>
-          <div class="cont-no">FFAU7339088</div>
-        </div></div><div class="day-col ">
-      <div class="day-header">
-        <span class="dow">일</span>
-        <span>9/20</span>
-      </div><div class="cont-card hf " onclick="selectContainer('MRSU9433857')">
+          <div class="cont-no">CAAU5980289</div>
+          <div class="cont-bl">CSM ID: 21072SUPECIS75793</div>
+        </div><div class="cont-card hf " onclick="selectContainer('MRSU2805377')">
           <div class="cont-card-header">
             <span class="cont-type type-hf">HF</span>
             
           </div>
-          <div class="cont-no">MRSU9433857</div>
-        </div><div class="cont-card dd " onclick="selectContainer('TLLU6909322')">
+          <div class="cont-no">MRSU2805377</div>
+          <div class="cont-bl">CSM ID: 258DT260824726627</div>
+        </div></div><div class="day-col ">
+      <div class="day-header">
+        <span class="dow">금</span>
+        <span>10/16</span>
+      </div><div class="cont-card lf " onclick="selectContainer('MIEU4026408')">
+          <div class="cont-card-header">
+            <span class="cont-type type-lf">LF</span>
+            
+          </div>
+          <div class="cont-no">MIEU4026408</div>
+          <div class="cont-bl">CSM ID: 294DT260826726667</div>
+        </div><div class="cont-card dd " onclick="selectContainer('MIEU4250531')">
           <div class="cont-card-header">
             <span class="cont-type type-dd">DD</span>
             
           </div>
-          <div class="cont-no">TLLU6909322</div>
+          <div class="cont-no">MIEU4250531</div>
+          <div class="cont-bl">CSM ID: 22715SUPECIS74800</div>
+        </div></div><div class="day-col ">
+      <div class="day-header">
+        <span class="dow">토</span>
+        <span>10/17</span>
+      </div><div class="cont-card dd " onclick="selectContainer('HLHU8363061')">
+          <div class="cont-card-header">
+            <span class="cont-type type-dd">DD</span>
+            
+          </div>
+          <div class="cont-no">HLHU8363061</div>
+          <div class="cont-bl">CSM ID: 21072SUPECIS76473</div>
+        </div><div class="cont-card hf active" onclick="selectContainer('MRKU5905253')">
+          <div class="cont-card-header">
+            <span class="cont-type type-hf">HF</span>
+            
+          </div>
+          <div class="cont-no">MRKU5905253</div>
+          <div class="cont-bl">CSM ID: 258DT260901726134</div>
+        </div><div class="cont-card dd " onclick="selectContainer('MIEU4026136')">
+          <div class="cont-card-header">
+            <span class="cont-type type-dd">DD</span>
+            
+          </div>
+          <div class="cont-no">MIEU4026136</div>
+          <div class="cont-bl">CSM ID: 22715SUPECIS74434</div>
+        </div></div><div class="day-col ">
+      <div class="day-header">
+        <span class="dow">일</span>
+        <span>10/18</span>
+      </div><div class="cont-card dd " onclick="selectContainer('MIEU4055031')">
+          <div class="cont-card-header">
+            <span class="cont-type type-dd">DD</span>
+            
+          </div>
+          <div class="cont-no">MIEU4055031</div>
+          <div class="cont-bl">CSM ID: 21072SUPECIS75985</div>
+        </div><div class="cont-card hf " onclick="selectContainer('MIEU4248386')">
+          <div class="cont-card-header">
+            <span class="cont-type type-hf">HF</span>
+            
+          </div>
+          <div class="cont-no">MIEU4248386</div>
+          <div class="cont-bl">CSM ID: 258DT260904726418</div>
         </div></div><div class="day-col ">
       <div class="day-header">
         <span class="dow">월</span>
-        <span>9/21</span>
-      </div><div class="no-cont">-</div></div><div class="day-col ">
-      <div class="day-header">
-        <span class="dow">화</span>
-        <span>9/22</span>
+        <span>10/19</span>
       </div><div class="no-cont">-</div></div></div>
 
   <!-- Article List Panel (shown on container click) -->
   <div class="article-panel visible" id="articlePanel">
     <div class="article-panel-header">
       <div>
-        <div class="article-panel-title" id="panelTitle">📦 SEKU1029018  (DD)</div>
-        <div class="article-panel-meta" id="panelMeta">BL: EGLV003600846496  |  운송사: EVERGREEN LINE  |  입고 예정일: 2026-08-30  |  통관: 420  |  CBM: 0.73</div>
+        <div class="article-panel-title" id="panelTitle">📦 MRKU5905253  (HF)</div>
+        <div class="article-panel-meta" id="panelMeta">CSM ID: 258DT260901726134  |  BL: MAEUIK0221456  |  운송사: MAERSK A/S  |  입고 예정일: 2026-10-17  |  통관: 400  |  CBM: 56.91</div>
       </div>
       <button class="article-panel-close" onclick="closePanel()">✕</button>
     </div>
@@ -431,22 +461,919 @@
           <th>ItemNo</th><th class="col-name">품명</th><th>PA</th><th>TYPE</th><th style="text-align:right">수량(Qty)</th><th>LatestRCVDate</th><th>매장 입고 예정일</th><th>GD/GY</th><th>CSM ID</th><th>BL</th><th>Container</th><th>SSD</th><th>EDS</th>
         </tr></thead>
         <tbody><tr>
-        <td><strong>70569244</strong></td>
-        <td class="col-name" title="FLYGFISK place mat 38x30 light beige AP">FLYGFISK place mat 38x30 light beige AP</td>
-        <td>1541</td>
-        <td><span class="badge-type type-dd">DD</span></td>
-        <td style="text-align:right">4,800</td>
-        <td>2026-08-03</td>
-        <td><span class="planned-date">2026-08-30</span></td>
-        <td style="text-align:center"><span class="badge-gy">GY</span></td>
-        <td style="font-size:.75rem">EGLV003600846496</td>
-        <td style="font-size:.75rem;word-break:break-all">SEKU1029018</td>
+        <td><strong>330067</strong></td>
+        <td class="col-name" title="LILLABO train set w rail s45 AP">LILLABO train set w rail s45 AP</td>
+        <td>972</td>
+        <td><span class="badge-type type-hf">HF</span></td>
+        <td style="text-align:right">90</td>
+        <td>2026-10-08</td>
+        <td><span class="planned-date">2026-10-17</span></td>
+        <td style="text-align:center"><span class="badge-gd">GD</span></td>
+        <td style="font-size:.75rem;word-break:break-all">258DT260901726134</td>
+        <td style="font-size:.75rem">MAEUIK0221456</td>
+        <td style="font-size:.75rem;word-break:break-all">MRKU5905253</td>
+        <td>2017-10-01</td>
+        <td>-</td>
+      </tr><tr>
+        <td><strong>50470989</strong></td>
+        <td class="col-name" title="PÅDRAG vase 17 clear glass AP">PÅDRAG vase 17 clear glass AP</td>
+        <td>1633</td>
+        <td><span class="badge-type type-hf">HF</span></td>
+        <td style="text-align:right">360</td>
+        <td>2026-10-08</td>
+        <td><span class="planned-date">2026-10-17</span></td>
+        <td style="text-align:center"><span class="badge-gd">GD</span></td>
+        <td style="font-size:.75rem;word-break:break-all">258DT260901726134</td>
+        <td style="font-size:.75rem">MAEUIK0221456</td>
+        <td style="font-size:.75rem;word-break:break-all">MRKU5905253</td>
+        <td>2021-04-01</td>
+        <td>-</td>
+      </tr><tr>
+        <td><strong>10488967</strong></td>
+        <td class="col-name" title="MÅLA N easel softwood AP CN">MÅLA N easel softwood AP CN</td>
+        <td>973</td>
+        <td><span class="badge-type type-hf">HF</span></td>
+        <td style="text-align:right">30</td>
+        <td>2026-10-08</td>
+        <td><span class="planned-date">2026-10-17</span></td>
+        <td style="text-align:center"><span class="badge-gd">GD</span></td>
+        <td style="font-size:.75rem;word-break:break-all">258DT260901726134</td>
+        <td style="font-size:.75rem">MAEUIK0221456</td>
+        <td style="font-size:.75rem;word-break:break-all">MRKU5905253</td>
+        <td>2021-07-01</td>
+        <td>-</td>
+      </tr><tr>
+        <td><strong>40589352</strong></td>
+        <td class="col-name" title="LILLABO garage w car and helicopter multicolour AP">LILLABO garage w car and helicopter multicolour AP</td>
+        <td>972</td>
+        <td><span class="badge-type type-hf">HF</span></td>
+        <td style="text-align:right">24</td>
+        <td>2026-10-08</td>
+        <td><span class="planned-date">2026-10-17</span></td>
+        <td style="text-align:center"><span class="badge-gd">GD</span></td>
+        <td style="font-size:.75rem;word-break:break-all">258DT260901726134</td>
+        <td style="font-size:.75rem">MAEUIK0221456</td>
+        <td style="font-size:.75rem;word-break:break-all">MRKU5905253</td>
+        <td>2026-01-01</td>
+        <td>-</td>
+      </tr><tr>
+        <td><strong>40319973</strong></td>
+        <td class="col-name" title="DUKTIG N play kitchen 72x40x109 birch AP CN">DUKTIG N play kitchen 72x40x109 birch AP CN</td>
+        <td>972</td>
+        <td><span class="badge-type type-hf">HF</span></td>
+        <td style="text-align:right">15</td>
+        <td>2026-10-08</td>
+        <td><span class="planned-date">2026-10-17</span></td>
+        <td style="text-align:center"><span class="badge-gd">GD</span></td>
+        <td style="font-size:.75rem;word-break:break-all">258DT260901726134</td>
+        <td style="font-size:.75rem">MAEUIK0221456</td>
+        <td style="font-size:.75rem;word-break:break-all">MRKU5905253</td>
+        <td>2016-04-01</td>
+        <td>-</td>
+      </tr><tr>
+        <td><strong>20550176</strong></td>
+        <td class="col-name" title="BÄRFIS hanger f door adjustable AP">BÄRFIS hanger f door adjustable AP</td>
+        <td>922</td>
+        <td><span class="badge-type type-hf">HF</span></td>
+        <td style="text-align:right">66</td>
+        <td>2026-10-08</td>
+        <td><span class="planned-date">2026-10-17</span></td>
+        <td style="text-align:center"><span class="badge-gd">GD</span></td>
+        <td style="font-size:.75rem;word-break:break-all">258DT260901726134</td>
+        <td style="font-size:.75rem">MAEUIK0221456</td>
+        <td style="font-size:.75rem;word-break:break-all">MRKU5905253</td>
         <td>2023-10-01</td>
+        <td>-</td>
+      </tr><tr>
+        <td><strong>30582073</strong></td>
+        <td class="col-name" title="TROFAST NN stor box 42x30x10 white AP">TROFAST NN stor box 42x30x10 white AP</td>
+        <td>921</td>
+        <td><span class="badge-type type-hf">HF</span></td>
+        <td style="text-align:right">256</td>
+        <td>2026-10-08</td>
+        <td><span class="planned-date">2026-10-17</span></td>
+        <td style="text-align:center"><span class="badge-gd">GD</span></td>
+        <td style="font-size:.75rem;word-break:break-all">258DT260901726134</td>
+        <td style="font-size:.75rem">MAEUIK0221456</td>
+        <td style="font-size:.75rem;word-break:break-all">MRKU5905253</td>
+        <td>2025-01-01</td>
+        <td>-</td>
+      </tr><tr>
+        <td><strong>20371523</strong></td>
+        <td class="col-name" title="TROGEN child step stl 40x38x33 yellow AP">TROGEN child step stl 40x38x33 yellow AP</td>
+        <td>981</td>
+        <td><span class="badge-type type-hf">HF</span></td>
+        <td style="text-align:right">90</td>
+        <td>2026-10-08</td>
+        <td><span class="planned-date">2026-10-17</span></td>
+        <td style="text-align:center"><span class="badge-gd">GD</span></td>
+        <td style="font-size:.75rem;word-break:break-all">258DT260901726136</td>
+        <td style="font-size:.75rem">MAEUIK0221456</td>
+        <td style="font-size:.75rem;word-break:break-all">MRKU5905253</td>
+        <td>2017-04-01</td>
+        <td>-</td>
+      </tr><tr>
+        <td><strong>30627199</strong></td>
+        <td class="col-name" title="SKOGSFRÄKEN N pllw high side/back 50x80 AP">SKOGSFRÄKEN N pllw high side/back 50x80 AP</td>
+        <td>1122</td>
+        <td><span class="badge-type type-hf">HF</span></td>
+        <td style="text-align:right">32</td>
+        <td>2026-10-08</td>
+        <td><span class="planned-date">2026-10-17</span></td>
+        <td style="text-align:center"><span class="badge-gd">GD</span></td>
+        <td style="font-size:.75rem;word-break:break-all">258DT260901726134</td>
+        <td style="font-size:.75rem">MAEUIK0221456</td>
+        <td style="font-size:.75rem;word-break:break-all">MRKU5905253</td>
+        <td>2026-04-01</td>
+        <td>-</td>
+      </tr><tr>
+        <td><strong>50599280</strong></td>
+        <td class="col-name" title="VIPPÄRT N chr pad 38x38x6.5 beige AP">VIPPÄRT N chr pad 38x38x6.5 beige AP</td>
+        <td>1233</td>
+        <td><span class="badge-type type-hf">HF</span></td>
+        <td style="text-align:right">200</td>
+        <td>2026-10-08</td>
+        <td><span class="planned-date">2026-10-17</span></td>
+        <td style="text-align:center"><span class="badge-gd">GD</span></td>
+        <td style="font-size:.75rem;word-break:break-all">258DT260901726134</td>
+        <td style="font-size:.75rem">MAEUIK0221456</td>
+        <td style="font-size:.75rem;word-break:break-all">MRKU5905253</td>
+        <td>2025-04-01</td>
+        <td>-</td>
+      </tr><tr>
+        <td><strong>80446097</strong></td>
+        <td class="col-name" title="KLUBBSPORRE ergo pllw side/back sleeper 41x70 AP">KLUBBSPORRE ergo pllw side/back sleeper 41x70 AP</td>
+        <td>1122</td>
+        <td><span class="badge-type type-hf">HF</span></td>
+        <td style="text-align:right">50</td>
+        <td>2026-10-08</td>
+        <td><span class="planned-date">2026-10-17</span></td>
+        <td style="text-align:center"><span class="badge-gd">GD</span></td>
+        <td style="font-size:.75rem;word-break:break-all">258DT260901726134</td>
+        <td style="font-size:.75rem">MAEUIK0221456</td>
+        <td style="font-size:.75rem;word-break:break-all">MRKU5905253</td>
+        <td>2019-08-01</td>
+        <td>2027-04-01</td>
+      </tr><tr>
+        <td><strong>70444367</strong></td>
+        <td class="col-name" title="ROSENSKÄRM ergo pllw side/back sleeper 33x50 AP">ROSENSKÄRM ergo pllw side/back sleeper 33x50 AP</td>
+        <td>1122</td>
+        <td><span class="badge-type type-hf">HF</span></td>
+        <td style="text-align:right">66</td>
+        <td>2026-10-08</td>
+        <td><span class="planned-date">2026-10-17</span></td>
+        <td style="text-align:center"><span class="badge-gd">GD</span></td>
+        <td style="font-size:.75rem;word-break:break-all">258DT260901726134</td>
+        <td style="font-size:.75rem">MAEUIK0221456</td>
+        <td style="font-size:.75rem;word-break:break-all">MRKU5905253</td>
+        <td>2019-08-01</td>
+        <td>2027-01-01</td>
+      </tr><tr>
+        <td><strong>60596196</strong></td>
+        <td class="col-name" title="LÖKSTAMFLY ergo pllw side/back sleeper 50x80 AP">LÖKSTAMFLY ergo pllw side/back sleeper 50x80 AP</td>
+        <td>1122</td>
+        <td><span class="badge-type type-hf">HF</span></td>
+        <td style="text-align:right">12</td>
+        <td>2026-10-08</td>
+        <td><span class="planned-date">2026-10-17</span></td>
+        <td style="text-align:center"><span class="badge-gd">GD</span></td>
+        <td style="font-size:.75rem;word-break:break-all">258DT260901726134</td>
+        <td style="font-size:.75rem">MAEUIK0221456</td>
+        <td style="font-size:.75rem;word-break:break-all">MRKU5905253</td>
+        <td>2025-01-01</td>
+        <td>2027-04-01</td>
+      </tr><tr>
+        <td><strong>60544881</strong></td>
+        <td class="col-name" title="SANDGRÄSMAL pillow 50x80 AP">SANDGRÄSMAL pillow 50x80 AP</td>
+        <td>1122</td>
+        <td><span class="badge-type type-hf">HF</span></td>
+        <td style="text-align:right">50</td>
+        <td>2026-10-08</td>
+        <td><span class="planned-date">2026-10-17</span></td>
+        <td style="text-align:center"><span class="badge-gd">GD</span></td>
+        <td style="font-size:.75rem;word-break:break-all">258DT260901726134</td>
+        <td style="font-size:.75rem">MAEUIK0221456</td>
+        <td style="font-size:.75rem;word-break:break-all">MRKU5905253</td>
+        <td>2023-01-01</td>
+        <td>-</td>
+      </tr><tr>
+        <td><strong>50602150</strong></td>
+        <td class="col-name" title="BENGTA N block-out crtns 1 pc 210x250 bei/ht AP">BENGTA N block-out crtns 1 pc 210x250 bei/ht AP</td>
+        <td>1211</td>
+        <td><span class="badge-type type-hf">HF</span></td>
+        <td style="text-align:right">198</td>
+        <td>2026-10-08</td>
+        <td><span class="planned-date">2026-10-17</span></td>
+        <td style="text-align:center"><span class="badge-gd">GD</span></td>
+        <td style="font-size:.75rem;word-break:break-all">258DT260901726134</td>
+        <td style="font-size:.75rem">MAEUIK0221456</td>
+        <td style="font-size:.75rem;word-break:break-all">MRKU5905253</td>
+        <td>2025-04-01</td>
+        <td>-</td>
+      </tr><tr>
+        <td><strong>60550711</strong></td>
+        <td class="col-name" title="INNER cush pad 40x58 white/in/outdoor AP">INNER cush pad 40x58 white/in/outdoor AP</td>
+        <td>1231</td>
+        <td><span class="badge-type type-hf">HF</span></td>
+        <td style="text-align:right">72</td>
+        <td>2026-10-08</td>
+        <td><span class="planned-date">2026-10-17</span></td>
+        <td style="text-align:center"><span class="badge-gd">GD</span></td>
+        <td style="font-size:.75rem;word-break:break-all">258DT260901726134</td>
+        <td style="font-size:.75rem">MAEUIK0221456</td>
+        <td style="font-size:.75rem;word-break:break-all">MRKU5905253</td>
+        <td>2023-04-01</td>
+        <td>-</td>
+      </tr><tr>
+        <td><strong>581904</strong></td>
+        <td class="col-name" title="FINTSEN bath mat 40x60 beige AP">FINTSEN bath mat 40x60 beige AP</td>
+        <td>1132</td>
+        <td><span class="badge-type type-hf">HF</span></td>
+        <td style="text-align:right">320</td>
+        <td>2026-10-08</td>
+        <td><span class="planned-date">2026-10-17</span></td>
+        <td style="text-align:center"><span class="badge-gd">GD</span></td>
+        <td style="font-size:.75rem;word-break:break-all">258DT260901726134</td>
+        <td style="font-size:.75rem">MAEUIK0221456</td>
+        <td style="font-size:.75rem;word-break:break-all">MRKU5905253</td>
+        <td>2024-07-01</td>
+        <td>-</td>
+      </tr><tr>
+        <td><strong>80610262</strong></td>
+        <td class="col-name" title="TOFTBO bath mat 40x60 beige AP">TOFTBO bath mat 40x60 beige AP</td>
+        <td>1132</td>
+        <td><span class="badge-type type-hf">HF</span></td>
+        <td style="text-align:right">172</td>
+        <td>2026-10-08</td>
+        <td><span class="planned-date">2026-10-17</span></td>
+        <td style="text-align:center"><span class="badge-gd">GD</span></td>
+        <td style="font-size:.75rem;word-break:break-all">258DT260901726134</td>
+        <td style="font-size:.75rem">MAEUIK0221456</td>
+        <td style="font-size:.75rem;word-break:break-all">MRKU5905253</td>
+        <td>2025-07-01</td>
+        <td>-</td>
+      </tr><tr>
+        <td><strong>40572808</strong></td>
+        <td class="col-name" title="KLIPPKAKTUS storage turntbl AP">KLIPPKAKTUS storage turntbl AP</td>
+        <td>1434</td>
+        <td><span class="badge-type type-hf">HF</span></td>
+        <td style="text-align:right">168</td>
+        <td>2026-10-08</td>
+        <td><span class="planned-date">2026-10-17</span></td>
+        <td style="text-align:center"><span class="badge-gd">GD</span></td>
+        <td style="font-size:.75rem;word-break:break-all">258DT260901726134</td>
+        <td style="font-size:.75rem">MAEUIK0221456</td>
+        <td style="font-size:.75rem;word-break:break-all">MRKU5905253</td>
+        <td>2024-01-01</td>
+        <td>-</td>
+      </tr><tr>
+        <td><strong>80396243</strong></td>
+        <td class="col-name" title="KNAPPER N stand mirr 48x160 white AP">KNAPPER N stand mirr 48x160 white AP</td>
+        <td>433</td>
+        <td><span class="badge-type type-hf">HF</span></td>
+        <td style="text-align:right">26</td>
+        <td>2026-10-08</td>
+        <td><span class="planned-date">2026-10-17</span></td>
+        <td style="text-align:center"><span class="badge-gd">GD</span></td>
+        <td style="font-size:.75rem;word-break:break-all">258DT260901726134</td>
+        <td style="font-size:.75rem">MAEUIK0221456</td>
+        <td style="font-size:.75rem;word-break:break-all">MRKU5905253</td>
+        <td>2018-08-01</td>
+        <td>-</td>
+      </tr><tr>
+        <td><strong>20623494</strong></td>
+        <td class="col-name" title="EKOLN N waste bin 3 l beige AP">EKOLN N waste bin 3 l beige AP</td>
+        <td>623</td>
+        <td><span class="badge-type type-hf">HF</span></td>
+        <td style="text-align:right">36</td>
+        <td>2026-10-08</td>
+        <td><span class="planned-date">2026-10-17</span></td>
+        <td style="text-align:center"><span class="badge-gd">GD</span></td>
+        <td style="font-size:.75rem;word-break:break-all">258DT260901726134</td>
+        <td style="font-size:.75rem">MAEUIK0221456</td>
+        <td style="font-size:.75rem;word-break:break-all">MRKU5905253</td>
+        <td>2026-04-01</td>
+        <td>-</td>
+      </tr><tr>
+        <td><strong>60431327</strong></td>
+        <td class="col-name" title="JONAXEL wire bskt 25x51x15 white AP">JONAXEL wire bskt 25x51x15 white AP</td>
+        <td>424</td>
+        <td><span class="badge-type type-hf">HF</span></td>
+        <td style="text-align:right">78</td>
+        <td>2026-10-08</td>
+        <td><span class="planned-date">2026-10-17</span></td>
+        <td style="text-align:center"><span class="badge-gd">GD</span></td>
+        <td style="font-size:.75rem;word-break:break-all">258DT260901726134</td>
+        <td style="font-size:.75rem">MAEUIK0221456</td>
+        <td style="font-size:.75rem;word-break:break-all">MRKU5905253</td>
+        <td>2019-08-01</td>
+        <td>-</td>
+      </tr><tr>
+        <td><strong>10628944</strong></td>
+        <td class="col-name" title="STRANDMON wing chr Talliden beige/brown AP">STRANDMON wing chr Talliden beige/brown AP</td>
+        <td>125</td>
+        <td><span class="badge-type type-hf">HF</span></td>
+        <td style="text-align:right">2</td>
+        <td>2026-10-08</td>
+        <td><span class="planned-date">2026-10-17</span></td>
+        <td style="text-align:center"><span class="badge-gd">GD</span></td>
+        <td style="font-size:.75rem;word-break:break-all">258DT260901726134</td>
+        <td style="font-size:.75rem">MAEUIK0221456</td>
+        <td style="font-size:.75rem;word-break:break-all">MRKU5905253</td>
+        <td>2026-10-01</td>
+        <td>-</td>
+      </tr><tr>
+        <td><strong>70531939</strong></td>
+        <td class="col-name" title="KRUBBET hldr f mbl phn black AP">KRUBBET hldr f mbl phn black AP</td>
+        <td>1813</td>
+        <td><span class="badge-type type-hf">HF</span></td>
+        <td style="text-align:right">360</td>
+        <td>2026-10-08</td>
+        <td><span class="planned-date">2026-10-17</span></td>
+        <td style="text-align:center"><span class="badge-gd">GD</span></td>
+        <td style="font-size:.75rem;word-break:break-all">258DT260901726134</td>
+        <td style="font-size:.75rem">MAEUIK0221456</td>
+        <td style="font-size:.75rem;word-break:break-all">MRKU5905253</td>
+        <td>2022-07-01</td>
+        <td>-</td>
+      </tr><tr>
+        <td><strong>90487817</strong></td>
+        <td class="col-name" title="EKENABBEN open shlvg ut 70x34x86 aspen/white AP">EKENABBEN open shlvg ut 70x34x86 aspen/white AP</td>
+        <td>215</td>
+        <td><span class="badge-type type-hf">HF</span></td>
+        <td style="text-align:right">28</td>
+        <td>2026-10-08</td>
+        <td><span class="planned-date">2026-10-17</span></td>
+        <td style="text-align:center"><span class="badge-gd">GD</span></td>
+        <td style="font-size:.75rem;word-break:break-all">258DT260901726134</td>
+        <td style="font-size:.75rem">MAEUIK0221456</td>
+        <td style="font-size:.75rem;word-break:break-all">MRKU5905253</td>
+        <td>2021-10-01</td>
+        <td>-</td>
+      </tr><tr>
+        <td><strong>40433365</strong></td>
+        <td class="col-name" title="BROGRUND tch tp bin 4 l stainless steel AP">BROGRUND tch tp bin 4 l stainless steel AP</td>
+        <td>623</td>
+        <td><span class="badge-type type-hf">HF</span></td>
+        <td style="text-align:right">36</td>
+        <td>2026-10-08</td>
+        <td><span class="planned-date">2026-10-17</span></td>
+        <td style="text-align:center"><span class="badge-gd">GD</span></td>
+        <td style="font-size:.75rem;word-break:break-all">258DT260901726134</td>
+        <td style="font-size:.75rem">MAEUIK0221456</td>
+        <td style="font-size:.75rem;word-break:break-all">MRKU5905253</td>
+        <td>2019-08-01</td>
+        <td>-</td>
+      </tr><tr>
+        <td><strong>80558216</strong></td>
+        <td class="col-name" title="BRUKSVARA clothes rack 78x147 white AP">BRUKSVARA clothes rack 78x147 white AP</td>
+        <td>433</td>
+        <td><span class="badge-type type-hf">HF</span></td>
+        <td style="text-align:right">25</td>
+        <td>2026-10-08</td>
+        <td><span class="planned-date">2026-10-17</span></td>
+        <td style="text-align:center"><span class="badge-gd">GD</span></td>
+        <td style="font-size:.75rem;word-break:break-all">258DT260901726134</td>
+        <td style="font-size:.75rem">MAEUIK0221456</td>
+        <td style="font-size:.75rem;word-break:break-all">MRKU5905253</td>
+        <td>2024-04-01</td>
+        <td>-</td>
+      </tr><tr>
+        <td><strong>70431317</strong></td>
+        <td class="col-name" title="JONAXEL shelv ut 80x38x160 white AP">JONAXEL shelv ut 80x38x160 white AP</td>
+        <td>424</td>
+        <td><span class="badge-type type-hf">HF</span></td>
+        <td style="text-align:right">46</td>
+        <td>2026-10-08</td>
+        <td><span class="planned-date">2026-10-17</span></td>
+        <td style="text-align:center"><span class="badge-gd">GD</span></td>
+        <td style="font-size:.75rem;word-break:break-all">258DT260901726134</td>
+        <td style="font-size:.75rem">MAEUIK0221456</td>
+        <td style="font-size:.75rem;word-break:break-all">MRKU5905253</td>
+        <td>2019-06-01</td>
+        <td>-</td>
+      </tr><tr>
+        <td><strong>522033</strong></td>
+        <td class="col-name" title="STYRSPEL gaming chair dark grey/grey AP">STYRSPEL gaming chair dark grey/grey AP</td>
+        <td>371</td>
+        <td><span class="badge-type type-hf">HF</span></td>
+        <td style="text-align:right">3</td>
+        <td>2026-10-08</td>
+        <td><span class="planned-date">2026-10-17</span></td>
+        <td style="text-align:center"><span class="badge-gd">GD</span></td>
+        <td style="font-size:.75rem;word-break:break-all">258DT260901726134</td>
+        <td style="font-size:.75rem">MAEUIK0221456</td>
+        <td style="font-size:.75rem;word-break:break-all">MRKU5905253</td>
+        <td>2022-10-01</td>
+        <td>-</td>
+      </tr><tr>
+        <td><strong>80441759</strong></td>
+        <td class="col-name" title="KLEPPSTAD wrd 3d 117x55x176 white AP">KLEPPSTAD wrd 3d 117x55x176 white AP</td>
+        <td>423</td>
+        <td><span class="badge-type type-hf">HF</span></td>
+        <td style="text-align:right">15</td>
+        <td>2026-10-08</td>
+        <td><span class="planned-date">2026-10-17</span></td>
+        <td style="text-align:center"><span class="badge-gd">GD</span></td>
+        <td style="font-size:.75rem;word-break:break-all">258DT260901726134</td>
+        <td style="font-size:.75rem">MAEUIK0221456</td>
+        <td style="font-size:.75rem;word-break:break-all">MRKU5905253</td>
+        <td>2019-10-01</td>
+        <td>-</td>
+      </tr><tr>
+        <td><strong>40591048</strong></td>
+        <td class="col-name" title="SKUBB NN stor case 43x53x19 white AP">SKUBB NN stor case 43x53x19 white AP</td>
+        <td>1831</td>
+        <td><span class="badge-type type-hf">HF</span></td>
+        <td style="text-align:right">164</td>
+        <td>2026-10-08</td>
+        <td><span class="planned-date">2026-10-17</span></td>
+        <td style="text-align:center"><span class="badge-gd">GD</span></td>
+        <td style="font-size:.75rem;word-break:break-all">258DT260901726134</td>
+        <td style="font-size:.75rem">MAEUIK0221456</td>
+        <td style="font-size:.75rem;word-break:break-all">MRKU5905253</td>
+        <td>2026-01-01</td>
+        <td>-</td>
+      </tr><tr>
+        <td><strong>70574434</strong></td>
+        <td class="col-name" title="BOLMEN N toil brsh hldr black AP">BOLMEN N toil brsh hldr black AP</td>
+        <td>623</td>
+        <td><span class="badge-type type-hf">HF</span></td>
+        <td style="text-align:right">448</td>
+        <td>2026-10-08</td>
+        <td><span class="planned-date">2026-10-17</span></td>
+        <td style="text-align:center"><span class="badge-gd">GD</span></td>
+        <td style="font-size:.75rem;word-break:break-all">258DT260901726134</td>
+        <td style="font-size:.75rem">MAEUIK0221456</td>
+        <td style="font-size:.75rem;word-break:break-all">MRKU5905253</td>
+        <td>2024-10-01</td>
+        <td>-</td>
+      </tr><tr>
+        <td><strong>70431303</strong></td>
+        <td class="col-name" title="JONAXEL frame 25x51x70 white AP">JONAXEL frame 25x51x70 white AP</td>
+        <td>424</td>
+        <td><span class="badge-type type-hf">HF</span></td>
+        <td style="text-align:right">52</td>
+        <td>2026-10-08</td>
+        <td><span class="planned-date">2026-10-17</span></td>
+        <td style="text-align:center"><span class="badge-gd">GD</span></td>
+        <td style="font-size:.75rem;word-break:break-all">258DT260901726134</td>
+        <td style="font-size:.75rem">MAEUIK0221456</td>
+        <td style="font-size:.75rem;word-break:break-all">MRKU5905253</td>
+        <td>2019-08-01</td>
+        <td>-</td>
+      </tr><tr>
+        <td><strong>30437241</strong></td>
+        <td class="col-name" title="KLEPPSTAD wrd sldng drs 117x55x176 white AP">KLEPPSTAD wrd sldng drs 117x55x176 white AP</td>
+        <td>423</td>
+        <td><span class="badge-type type-hf">HF</span></td>
+        <td style="text-align:right">12</td>
+        <td>2026-10-08</td>
+        <td><span class="planned-date">2026-10-17</span></td>
+        <td style="text-align:center"><span class="badge-gd">GD</span></td>
+        <td style="font-size:.75rem;word-break:break-all">258DT260901726134</td>
+        <td style="font-size:.75rem">MAEUIK0221456</td>
+        <td style="font-size:.75rem;word-break:break-all">MRKU5905253</td>
+        <td>2020-08-01</td>
+        <td>-</td>
+      </tr><tr>
+        <td><strong>90550111</strong></td>
+        <td class="col-name" title="RÖDALM frame 61x91 black AP">RÖDALM frame 61x91 black AP</td>
+        <td>1641</td>
+        <td><span class="badge-type type-hf">HF</span></td>
+        <td style="text-align:right">20</td>
+        <td>2026-10-08</td>
+        <td><span class="planned-date">2026-10-17</span></td>
+        <td style="text-align:center"><span class="badge-gd">GD</span></td>
+        <td style="font-size:.75rem;word-break:break-all">258DT260901726134</td>
+        <td style="font-size:.75rem">MAEUIK0221456</td>
+        <td style="font-size:.75rem;word-break:break-all">MRKU5905253</td>
+        <td>2024-04-01</td>
+        <td>-</td>
+      </tr><tr>
+        <td><strong>40322174</strong></td>
+        <td class="col-name" title="FLÅDIS basket 25 seagrass AP CN">FLÅDIS basket 25 seagrass AP CN</td>
+        <td>1811</td>
+        <td><span class="badge-type type-hf">HF</span></td>
+        <td style="text-align:right">128</td>
+        <td>2026-10-08</td>
+        <td><span class="planned-date">2026-10-17</span></td>
+        <td style="text-align:center"><span class="badge-gd">GD</span></td>
+        <td style="font-size:.75rem;word-break:break-all">277DT260901726137</td>
+        <td style="font-size:.75rem">MAEUIK0221456</td>
+        <td style="font-size:.75rem;word-break:break-all">MRKU5905253</td>
+        <td>2016-04-01</td>
+        <td>-</td>
+      </tr><tr>
+        <td><strong>20629721</strong></td>
+        <td class="col-name" title="RÅSKOG N trolley 35x45x77 beige AP">RÅSKOG N trolley 35x45x77 beige AP</td>
+        <td>782</td>
+        <td><span class="badge-type type-hf">HF</span></td>
+        <td style="text-align:right">94</td>
+        <td>2026-10-08</td>
+        <td><span class="planned-date">2026-10-17</span></td>
+        <td style="text-align:center"><span class="badge-gd">GD</span></td>
+        <td style="font-size:.75rem;word-break:break-all">258DT260901726134</td>
+        <td style="font-size:.75rem">MAEUIK0221456</td>
+        <td style="font-size:.75rem;word-break:break-all">MRKU5905253</td>
+        <td>2026-04-01</td>
+        <td>-</td>
+      </tr><tr>
+        <td><strong>80179433</strong></td>
+        <td class="col-name" title="MULIG clothes rack 99x152 white AP CN">MULIG clothes rack 99x152 white AP CN</td>
+        <td>433</td>
+        <td><span class="badge-type type-hf">HF</span></td>
+        <td style="text-align:right">198</td>
+        <td>2026-10-08</td>
+        <td><span class="planned-date">2026-10-17</span></td>
+        <td style="text-align:center"><span class="badge-gd">GD</span></td>
+        <td style="font-size:.75rem;word-break:break-all">258DT260901726134</td>
+        <td style="font-size:.75rem">MAEUIK0221456</td>
+        <td style="font-size:.75rem;word-break:break-all">MRKU5905253</td>
+        <td>2014-08-01</td>
+        <td>-</td>
+      </tr><tr>
+        <td><strong>70178896</strong></td>
+        <td class="col-name" title="BEKVÄM step stool 50 white AP CN">BEKVÄM step stool 50 white AP CN</td>
+        <td>782</td>
+        <td><span class="badge-type type-hf">HF</span></td>
+        <td style="text-align:right">104</td>
+        <td>2026-10-08</td>
+        <td><span class="planned-date">2026-10-17</span></td>
+        <td style="text-align:center"><span class="badge-gd">GD</span></td>
+        <td style="font-size:.75rem;word-break:break-all">258DT260901726136</td>
+        <td style="font-size:.75rem">MAEUIK0221456</td>
+        <td style="font-size:.75rem;word-break:break-all">MRKU5905253</td>
+        <td>2014-08-01</td>
+        <td>-</td>
+      </tr><tr>
+        <td><strong>50500279</strong></td>
+        <td class="col-name" title="SUNNERSTA storage unit 56x38 AP CN">SUNNERSTA storage unit 56x38 AP CN</td>
+        <td>782</td>
+        <td><span class="badge-type type-hf">HF</span></td>
+        <td style="text-align:right">32</td>
+        <td>2026-10-08</td>
+        <td><span class="planned-date">2026-10-17</span></td>
+        <td style="text-align:center"><span class="badge-gd">GD</span></td>
+        <td style="font-size:.75rem;word-break:break-all">258DT260901726134</td>
+        <td style="font-size:.75rem">MAEUIK0221456</td>
+        <td style="font-size:.75rem;word-break:break-all">MRKU5905253</td>
+        <td>2022-10-01</td>
+        <td>-</td>
+      </tr><tr>
+        <td><strong>70568635</strong></td>
+        <td class="col-name" title="ÅFJÄLL foam matt 90x200 firm/white AP">ÅFJÄLL foam matt 90x200 firm/white AP</td>
+        <td>511</td>
+        <td><span class="badge-type type-hf">HF</span></td>
+        <td style="text-align:right">12</td>
+        <td>2026-10-08</td>
+        <td><span class="planned-date">2026-10-17</span></td>
+        <td style="text-align:center"><span class="badge-gd">GD</span></td>
+        <td style="font-size:.75rem;word-break:break-all">258DT260901726134</td>
+        <td style="font-size:.75rem">MAEUIK0221456</td>
+        <td style="font-size:.75rem;word-break:break-all">MRKU5905253</td>
+        <td>2023-10-01</td>
+        <td>-</td>
+      </tr><tr>
+        <td><strong>50225592</strong></td>
+        <td class="col-name" title="BEKVÄM step stool 50 aspen AP CN">BEKVÄM step stool 50 aspen AP CN</td>
+        <td>782</td>
+        <td><span class="badge-type type-hf">HF</span></td>
+        <td style="text-align:right">26</td>
+        <td>2026-10-08</td>
+        <td><span class="planned-date">2026-10-17</span></td>
+        <td style="text-align:center"><span class="badge-gd">GD</span></td>
+        <td style="font-size:.75rem;word-break:break-all">258DT260901726136</td>
+        <td style="font-size:.75rem">MAEUIK0221456</td>
+        <td style="font-size:.75rem;word-break:break-all">MRKU5905253</td>
+        <td>2014-08-01</td>
+        <td>-</td>
+      </tr><tr>
+        <td><strong>80480859</strong></td>
+        <td class="col-name" title="ÅGOTNES foam matt 90x200 firm/light blue AP">ÅGOTNES foam matt 90x200 firm/light blue AP</td>
+        <td>511</td>
+        <td><span class="badge-type type-hf">HF</span></td>
+        <td style="text-align:right">13</td>
+        <td>2026-10-08</td>
+        <td><span class="planned-date">2026-10-17</span></td>
+        <td style="text-align:center"><span class="badge-gd">GD</span></td>
+        <td style="font-size:.75rem;word-break:break-all">258DT260901726134</td>
+        <td style="font-size:.75rem">MAEUIK0221456</td>
+        <td style="font-size:.75rem;word-break:break-all">MRKU5905253</td>
+        <td>2021-10-01</td>
+        <td>-</td>
+      </tr><tr>
+        <td><strong>20573173</strong></td>
+        <td class="col-name" title="IVÖSJÖN mirror cab w 1 dr 44x15x59 green AP">IVÖSJÖN mirror cab w 1 dr 44x15x59 green AP</td>
+        <td>612</td>
+        <td><span class="badge-type type-hf">HF</span></td>
+        <td style="text-align:right">28</td>
+        <td>2026-10-08</td>
+        <td><span class="planned-date">2026-10-17</span></td>
+        <td style="text-align:center"><span class="badge-gd">GD</span></td>
+        <td style="font-size:.75rem;word-break:break-all">258DT260901726134</td>
+        <td style="font-size:.75rem">MAEUIK0221456</td>
+        <td style="font-size:.75rem;word-break:break-all">MRKU5905253</td>
+        <td>2025-01-01</td>
+        <td>2027-07-01</td>
+      </tr><tr>
+        <td><strong>90534003</strong></td>
+        <td class="col-name" title="GLADOM tray tbl 45x53 light blue AP">GLADOM tray tbl 45x53 light blue AP</td>
+        <td>131</td>
+        <td><span class="badge-type type-hf">HF</span></td>
+        <td style="text-align:right">44</td>
+        <td>2026-10-08</td>
+        <td><span class="planned-date">2026-10-17</span></td>
+        <td style="text-align:center"><span class="badge-gd">GD</span></td>
+        <td style="font-size:.75rem;word-break:break-all">258DT260901726134</td>
+        <td style="font-size:.75rem">MAEUIK0221456</td>
+        <td style="font-size:.75rem;word-break:break-all">MRKU5905253</td>
+        <td>2026-07-01</td>
+        <td>-</td>
+      </tr><tr>
+        <td><strong>50243968</strong></td>
+        <td class="col-name" title="HORNAVAN trolley 26x48x77 white AP">HORNAVAN trolley 26x48x77 white AP</td>
+        <td>612</td>
+        <td><span class="badge-type type-hf">HF</span></td>
+        <td style="text-align:right">33</td>
+        <td>2026-10-08</td>
+        <td><span class="planned-date">2026-10-17</span></td>
+        <td style="text-align:center"><span class="badge-gd">GD</span></td>
+        <td style="font-size:.75rem;word-break:break-all">258DT260901726134</td>
+        <td style="font-size:.75rem">MAEUIK0221456</td>
+        <td style="font-size:.75rem;word-break:break-all">MRKU5905253</td>
+        <td>2015-01-01</td>
+        <td>-</td>
+      </tr><tr>
+        <td><strong>30591770</strong></td>
+        <td class="col-name" title="RÅSKOG trolley 28x38x61 beige-yellow AP">RÅSKOG trolley 28x38x61 beige-yellow AP</td>
+        <td>782</td>
+        <td><span class="badge-type type-hf">HF</span></td>
+        <td style="text-align:right">56</td>
+        <td>2026-10-08</td>
+        <td><span class="planned-date">2026-10-17</span></td>
+        <td style="text-align:center"><span class="badge-gd">GD</span></td>
+        <td style="font-size:.75rem;word-break:break-all">258DT260901726134</td>
+        <td style="font-size:.75rem">MAEUIK0221456</td>
+        <td style="font-size:.75rem;word-break:break-all">MRKU5905253</td>
+        <td>2025-01-01</td>
+        <td>-</td>
+      </tr><tr>
+        <td><strong>50574430</strong></td>
+        <td class="col-name" title="BOLMEN N step stool white AP">BOLMEN N step stool white AP</td>
+        <td>612</td>
+        <td><span class="badge-type type-hf">HF</span></td>
+        <td style="text-align:right">240</td>
+        <td>2026-10-08</td>
+        <td><span class="planned-date">2026-10-17</span></td>
+        <td style="text-align:center"><span class="badge-gd">GD</span></td>
+        <td style="font-size:.75rem;word-break:break-all">258DT260901726134</td>
+        <td style="font-size:.75rem">MAEUIK0221456</td>
+        <td style="font-size:.75rem;word-break:break-all">MRKU5905253</td>
+        <td>2025-04-01</td>
+        <td>-</td>
+      </tr><tr>
+        <td><strong>90395144</strong></td>
+        <td class="col-name" title="POÄNG csh ach Knisa light beige AP">POÄNG csh ach Knisa light beige AP</td>
+        <td>125</td>
+        <td><span class="badge-type type-hf">HF</span></td>
+        <td style="text-align:right">20</td>
+        <td>2026-10-08</td>
+        <td><span class="planned-date">2026-10-17</span></td>
+        <td style="text-align:center"><span class="badge-gd">GD</span></td>
+        <td style="font-size:.75rem;word-break:break-all">258DT260901726134</td>
+        <td style="font-size:.75rem">MAEUIK0221456</td>
+        <td style="font-size:.75rem;word-break:break-all">MRKU5905253</td>
+        <td>2018-04-01</td>
+        <td>2027-07-01</td>
+      </tr><tr>
+        <td><strong>20354284</strong></td>
+        <td class="col-name" title="MICKE N crnr workstation 100x142 white AP">MICKE N crnr workstation 100x142 white AP</td>
+        <td>341</td>
+        <td><span class="badge-type type-hf">HF</span></td>
+        <td style="text-align:right">6</td>
+        <td>2026-10-08</td>
+        <td><span class="planned-date">2026-10-17</span></td>
+        <td style="text-align:center"><span class="badge-gd">GD</span></td>
+        <td style="font-size:.75rem;word-break:break-all">258DT260901726134</td>
+        <td style="font-size:.75rem">MAEUIK0221456</td>
+        <td style="font-size:.75rem;word-break:break-all">MRKU5905253</td>
+        <td>2017-04-01</td>
+        <td>2027-04-01</td>
+      </tr><tr>
+        <td><strong>50553710</strong></td>
+        <td class="col-name" title="RÖDALM frame f 9 pict 46x61 black AP">RÖDALM frame f 9 pict 46x61 black AP</td>
+        <td>1641</td>
+        <td><span class="badge-type type-hf">HF</span></td>
+        <td style="text-align:right">20</td>
+        <td>2026-10-08</td>
+        <td><span class="planned-date">2026-10-17</span></td>
+        <td style="text-align:center"><span class="badge-gd">GD</span></td>
+        <td style="font-size:.75rem;word-break:break-all">258DT260901726134</td>
+        <td style="font-size:.75rem">MAEUIK0221456</td>
+        <td style="font-size:.75rem;word-break:break-all">MRKU5905253</td>
+        <td>2024-04-01</td>
+        <td>-</td>
+      </tr><tr>
+        <td><strong>80354281</strong></td>
+        <td class="col-name" title="MICKE desk 73x50 white AP">MICKE desk 73x50 white AP</td>
+        <td>341</td>
+        <td><span class="badge-type type-hf">HF</span></td>
+        <td style="text-align:right">16</td>
+        <td>2026-10-08</td>
+        <td><span class="planned-date">2026-10-17</span></td>
+        <td style="text-align:center"><span class="badge-gd">GD</span></td>
+        <td style="font-size:.75rem;word-break:break-all">258DT260901726134</td>
+        <td style="font-size:.75rem">MAEUIK0221456</td>
+        <td style="font-size:.75rem;word-break:break-all">MRKU5905253</td>
+        <td>2017-04-01</td>
+        <td>2027-04-01</td>
+      </tr><tr>
+        <td><strong>70147758</strong></td>
+        <td class="col-name" title="BÄSTIS lint roller refill 4-p AP CN">BÄSTIS lint roller refill 4-p AP CN</td>
+        <td>1882</td>
+        <td><span class="badge-type type-hf">HF</span></td>
+        <td style="text-align:right">504</td>
+        <td>2026-10-08</td>
+        <td><span class="planned-date">2026-10-17</span></td>
+        <td style="text-align:center"><span class="badge-gd">GD</span></td>
+        <td style="font-size:.75rem;word-break:break-all">258DT260901726134</td>
+        <td style="font-size:.75rem">MAEUIK0221456</td>
+        <td style="font-size:.75rem;word-break:break-all">MRKU5905253</td>
+        <td>2014-08-01</td>
+        <td>-</td>
+      </tr><tr>
+        <td><strong>70264304</strong></td>
+        <td class="col-name" title="OLOV leg adjustable white AP CN">OLOV leg adjustable white AP CN</td>
+        <td>341</td>
+        <td><span class="badge-type type-hf">HF</span></td>
+        <td style="text-align:right">72</td>
+        <td>2026-10-08</td>
+        <td><span class="planned-date">2026-10-17</span></td>
+        <td style="text-align:center"><span class="badge-gd">GD</span></td>
+        <td style="font-size:.75rem;word-break:break-all">258DT260901726134</td>
+        <td style="font-size:.75rem">MAEUIK0221456</td>
+        <td style="font-size:.75rem;word-break:break-all">MRKU5905253</td>
+        <td>2014-08-01</td>
+        <td>-</td>
+      </tr><tr>
+        <td><strong>60500962</strong></td>
+        <td class="col-name" title="ÖRFJÄLL N seat shell white/Vissle light grey AP">ÖRFJÄLL N seat shell white/Vissle light grey AP</td>
+        <td>342</td>
+        <td><span class="badge-type type-hf">HF</span></td>
+        <td style="text-align:right">13</td>
+        <td>2026-10-08</td>
+        <td><span class="planned-date">2026-10-17</span></td>
+        <td style="text-align:center"><span class="badge-gd">GD</span></td>
+        <td style="font-size:.75rem;word-break:break-all">258DT260901726134</td>
+        <td style="font-size:.75rem">MAEUIK0221456</td>
+        <td style="font-size:.75rem;word-break:break-all">MRKU5905253</td>
+        <td>2021-04-01</td>
+        <td>2027-07-01</td>
+      </tr><tr>
+        <td><strong>70540161</strong></td>
+        <td class="col-name" title="OMAR shelv ut 92x50x94 galvanised AP">OMAR shelv ut 92x50x94 galvanised AP</td>
+        <td>241</td>
+        <td><span class="badge-type type-hf">HF</span></td>
+        <td style="text-align:right">18</td>
+        <td>2026-10-08</td>
+        <td><span class="planned-date">2026-10-17</span></td>
+        <td style="text-align:center"><span class="badge-gd">GD</span></td>
+        <td style="font-size:.75rem;word-break:break-all">258DT260901726134</td>
+        <td style="font-size:.75rem">MAEUIK0221456</td>
+        <td style="font-size:.75rem;word-break:break-all">MRKU5905253</td>
+        <td>2022-07-01</td>
+        <td>-</td>
+      </tr><tr>
+        <td><strong>20515593</strong></td>
+        <td class="col-name" title="MITTZON laptop tbl w cstrs 66x50 black AP">MITTZON laptop tbl w cstrs 66x50 black AP</td>
+        <td>351</td>
+        <td><span class="badge-type type-hf">HF</span></td>
+        <td style="text-align:right">16</td>
+        <td>2026-10-08</td>
+        <td><span class="planned-date">2026-10-17</span></td>
+        <td style="text-align:center"><span class="badge-gd">GD</span></td>
+        <td style="font-size:.75rem;word-break:break-all">258DT260901726134</td>
+        <td style="font-size:.75rem">MAEUIK0221456</td>
+        <td style="font-size:.75rem;word-break:break-all">MRKU5905253</td>
+        <td>2024-10-01</td>
+        <td>-</td>
+      </tr><tr>
+        <td><strong>60586102</strong></td>
+        <td class="col-name" title="TORNSBORG sb2 Naggen beige/pine AP">TORNSBORG sb2 Naggen beige/pine AP</td>
+        <td>113</td>
+        <td><span class="badge-type type-hf">HF</span></td>
+        <td style="text-align:right">2</td>
+        <td>2026-10-08</td>
+        <td><span class="planned-date">2026-10-17</span></td>
+        <td style="text-align:center"><span class="badge-gd">GD</span></td>
+        <td style="font-size:.75rem;word-break:break-all">258DT260901726134</td>
+        <td style="font-size:.75rem">MAEUIK0221456</td>
+        <td style="font-size:.75rem;word-break:break-all">MRKU5905253</td>
+        <td>2025-04-01</td>
+        <td>-</td>
+      </tr><tr>
+        <td><strong>167207</strong></td>
+        <td class="col-name" title="OMAR shelv ut 92x36x94 galvanised AP CN">OMAR shelv ut 92x36x94 galvanised AP CN</td>
+        <td>241</td>
+        <td><span class="badge-type type-hf">HF</span></td>
+        <td style="text-align:right">27</td>
+        <td>2026-10-08</td>
+        <td><span class="planned-date">2026-10-17</span></td>
+        <td style="text-align:center"><span class="badge-gd">GD</span></td>
+        <td style="font-size:.75rem;word-break:break-all">258DT260901726134</td>
+        <td style="font-size:.75rem">MAEUIK0221456</td>
+        <td style="font-size:.75rem;word-break:break-all">MRKU5905253</td>
+        <td>2014-08-01</td>
+        <td>-</td>
+      </tr><tr>
+        <td><strong>10592761</strong></td>
+        <td class="col-name" title="VIHALS chr white/Tibbleby beige-grey AP">VIHALS chr white/Tibbleby beige-grey AP</td>
+        <td>824</td>
+        <td><span class="badge-type type-hf">HF</span></td>
+        <td style="text-align:right">20</td>
+        <td>2026-10-08</td>
+        <td><span class="planned-date">2026-10-17</span></td>
+        <td style="text-align:center"><span class="badge-gd">GD</span></td>
+        <td style="font-size:.75rem;word-break:break-all">258DT260901726134</td>
+        <td style="font-size:.75rem">MAEUIK0221456</td>
+        <td style="font-size:.75rem;word-break:break-all">MRKU5905253</td>
+        <td>2025-04-01</td>
+        <td>-</td>
+      </tr><tr>
+        <td><strong>60355762</strong></td>
+        <td class="col-name" title="FRIDHULT sb Knisa light grey AP">FRIDHULT sb Knisa light grey AP</td>
+        <td>113</td>
+        <td><span class="badge-type type-hf">HF</span></td>
+        <td style="text-align:right">2</td>
+        <td>2026-10-08</td>
+        <td><span class="planned-date">2026-10-17</span></td>
+        <td style="text-align:center"><span class="badge-gd">GD</span></td>
+        <td style="font-size:.75rem;word-break:break-all">258DT260901726134</td>
+        <td style="font-size:.75rem">MAEUIK0221456</td>
+        <td style="font-size:.75rem;word-break:break-all">MRKU5905253</td>
+        <td>2024-10-01</td>
+        <td>2027-07-01</td>
+      </tr><tr>
+        <td><strong>10404878</strong></td>
+        <td class="col-name" title="FRANKLIN bar stool/backr fold 63 count hght whi AP">FRANKLIN bar stool/backr fold 63 count hght whi AP</td>
+        <td>823</td>
+        <td><span class="badge-type type-hf">HF</span></td>
+        <td style="text-align:right">40</td>
+        <td>2026-10-08</td>
+        <td><span class="planned-date">2026-10-17</span></td>
+        <td style="text-align:center"><span class="badge-gd">GD</span></td>
+        <td style="font-size:.75rem;word-break:break-all">258DT260901726134</td>
+        <td style="font-size:.75rem">MAEUIK0221456</td>
+        <td style="font-size:.75rem;word-break:break-all">MRKU5905253</td>
+        <td>2018-04-01</td>
+        <td>-</td>
+      </tr><tr>
+        <td><strong>90644285</strong></td>
+        <td class="col-name" title="UPPSNOFSAD stor box 35x25x14 cm/9l transp white AP">UPPSNOFSAD stor box 35x25x14 cm/9l transp white AP</td>
+        <td>1815</td>
+        <td><span class="badge-type type-hf">HF</span></td>
+        <td style="text-align:right">180</td>
+        <td>2026-10-08</td>
+        <td><span class="planned-date">2026-10-17</span></td>
+        <td style="text-align:center"><span class="badge-gd">GD</span></td>
+        <td style="font-size:.75rem;word-break:break-all">258DT260901726134</td>
+        <td style="font-size:.75rem">MAEUIK0221456</td>
+        <td style="font-size:.75rem;word-break:break-all">MRKU5905253</td>
+        <td>2026-07-01</td>
+        <td>-</td>
+      </tr><tr>
+        <td><strong>20381254</strong></td>
+        <td class="col-name" title="TISKEN bskt w suction cup white AP">TISKEN bskt w suction cup white AP</td>
+        <td>623</td>
+        <td><span class="badge-type type-hf">HF</span></td>
+        <td style="text-align:right">432</td>
+        <td>2026-10-08</td>
+        <td><span class="planned-date">2026-10-17</span></td>
+        <td style="text-align:center"><span class="badge-gd">GD</span></td>
+        <td style="font-size:.75rem;word-break:break-all">258DT260901726134</td>
+        <td style="font-size:.75rem">MAEUIK0221456</td>
+        <td style="font-size:.75rem;word-break:break-all">MRKU5905253</td>
+        <td>2019-02-01</td>
+        <td>2027-01-01</td>
+      </tr><tr>
+        <td><strong>70425627</strong></td>
+        <td class="col-name" title="BÄSTIS lint roller grey AP">BÄSTIS lint roller grey AP</td>
+        <td>1882</td>
+        <td><span class="badge-type type-hf">HF</span></td>
+        <td style="text-align:right">1,536</td>
+        <td>2026-10-08</td>
+        <td><span class="planned-date">2026-10-17</span></td>
+        <td style="text-align:center"><span class="badge-gd">GD</span></td>
+        <td style="font-size:.75rem;word-break:break-all">258DT260901726134</td>
+        <td style="font-size:.75rem">MAEUIK0221456</td>
+        <td style="font-size:.75rem;word-break:break-all">MRKU5905253</td>
+        <td>2019-02-01</td>
         <td>-</td>
       </tr></tbody>
       </table>
       </div>
-      <div class="result-count" style="margin-top:8px">총 1개 아티클</div></div>
+      <div class="result-count" style="margin-top:8px">총 65개 아티클</div></div>
   </div>
 
 
@@ -466,8 +1393,10 @@ let acSel = -1;
 
 // ── Init ──
 document.addEventListener('DOMContentLoaded', () => {
+  const today = new Date();
+  const todayText = today.toLocaleDateString('ko-KR');
   document.getElementById('todayLabel').textContent =
-    'Today: ' + new Date('2026-10-13').toLocaleDateString('ko-KR');
+    'Today: ' + todayText;
   buildKPI();
   buildWeek();
 });
@@ -481,7 +1410,7 @@ function buildKPI() {
   let html = `<div class="kpi-card">
     <div class="kpi-label">이번 주 전체 컨테이너</div>
     <div class="kpi-value">${weekContainers.length}</div>
-    <div class="kpi-sub">7/10 ~ 7/16</div>
+    <div class="kpi-sub">${todayText}</div>
   </div>`;
 
   types.forEach((t,i)=>{
