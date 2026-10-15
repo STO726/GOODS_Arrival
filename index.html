@@ -49,33 +49,33 @@
   .filter-btn.dd.active,.filter-btn.dd:hover{border-color:#f57c00;background:#f57c00;color:#fff}
 
   /* ── Week Grid ── */
-  .week-grid{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));grid-template-rows:repeat(2,auto);gap:6px;margin-bottom:32px;padding-bottom:4px}
-  @media(max-width:900px){.week-grid{grid-template-columns:repeat(7,minmax(0,1fr))}}
-  @media(max-width:600px){.week-grid{grid-template-columns:repeat(7,minmax(0,1fr));gap:4px}}
+  .week-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:10px;margin-bottom:32px}
+  @media(max-width:900px){.week-grid{grid-template-columns:repeat(4,1fr)}}
+  @media(max-width:600px){.week-grid{grid-template-columns:repeat(2,1fr)}}
 
-  .day-col{background:#fff;border-radius:8px;padding:7px;
+  .day-col{background:#fff;border-radius:10px;padding:12px;
            box-shadow:0 2px 6px rgba(0,0,0,.07);min-height:80px}
   .day-col.today{border:2px solid #3949ab;background:#f5f6ff}
   .day-header{font-size:.75rem;font-weight:700;color:#888;margin-bottom:8px;
               display:flex;justify-content:space-between}
   .day-header .dow{color:#1a237e;font-size:.9rem}
 
-  .cont-card{border-radius:6px;padding:5px 6px;margin-bottom:5px;cursor:pointer;
-             transition:transform .15s,box-shadow .15s;border-left:3px solid transparent}
+  .cont-card{border-radius:8px;padding:8px 10px;margin-bottom:7px;cursor:pointer;
+             transition:transform .15s,box-shadow .15s;border-left:4px solid transparent}
   .cont-card:hover{transform:translateY(-2px);box-shadow:0 4px 12px rgba(0,0,0,.15)}
   .cont-card.lf{background:#e3f2fd;border-left-color:#1976d2}
   .cont-card.hf{background:#e8f5e9;border-left-color:#388e3c}
   .cont-card.dd{background:#fff3e0;border-left-color:#f57c00}
   .cont-card.active{box-shadow:0 0 0 3px #3949ab55;transform:translateY(-2px)}
 
-  .cont-card .cont-type{font-size:.58rem;font-weight:700;color:#fff;padding:1px 4px;
-                        border-radius:8px;display:inline-block;flex:0 0 auto}
+  .cont-card .cont-type{font-size:.65rem;font-weight:700;color:#fff;padding:1px 6px;
+                        border-radius:10px;display:inline-block;margin-bottom:4px}
   .type-lf{background:#1976d2}.type-hf{background:#388e3c}.type-dd{background:#f57c00}
-  .cont-card .cont-no{font-size:.57rem;color:#333;font-weight:600;word-break:break-all;min-width:0;line-height:1.15}
-  .badge-gd{font-size:.54rem;font-weight:700;color:#fff;background:#8e24aa;padding:1px 4px;border-radius:8px;display:inline-block;flex:0 0 auto}
-  .badge-gy{font-size:.54rem;font-weight:700;color:#fff;background:#00838f;padding:1px 4px;border-radius:8px;display:inline-block;flex:0 0 auto}
-  .cont-card-header{display:flex;align-items:center;gap:3px;margin-bottom:0;min-width:0}
-  .cont-card .cont-bl{display:none}
+  .cont-card .cont-no{font-size:.7rem;color:#333;font-weight:600;word-break:break-all}
+  .badge-gd{font-size:.6rem;font-weight:700;color:#fff;background:#8e24aa;padding:1px 6px;border-radius:10px;display:inline-block;margin-left:4px}
+  .badge-gy{font-size:.6rem;font-weight:700;color:#fff;background:#00838f;padding:1px 6px;border-radius:10px;display:inline-block;margin-left:4px}
+  .cont-card-header{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:2px}
+  .cont-card .cont-bl{font-size:.65rem;color:#888;margin-top:2px}
   .cont-card .cont-carrier{font-size:.62rem;color:#aaa;margin-top:2px;
                             white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
   .cont-card .cont-stat{font-size:.62rem;color:#fff;background:#78909c;
@@ -154,7 +154,7 @@
 <div class="header">
   <div>🚢</div>
   <h1>Logistics Dashboard</h1>
-  <span id="todayLabel">Today</span>
+  <span id="todayLabel">Today: 2026. 10. 13.</span>
 </div>
 
 <div class="main">
@@ -163,7 +163,7 @@
   <div class="kpi-row" id="kpiRow"><div class="kpi-card">
     <div class="kpi-label">이번 주 전체 컨테이너</div>
     <div class="kpi-value">12</div>
-    <div class="kpi-sub"></div>
+
   </div><div class="kpi-card lf">
       <div class="kpi-label">LF 컨테이너</div>
       <div class="kpi-value">2</div>
@@ -322,7 +322,7 @@
   </div>
 
     <!-- Week Containers -->
-  <div class="section-title">📦 2주간 컨테이너 일정</div>
+  <div class="section-title">📦 이번 주 컨테이너 일정</div>
 
   <div class="filter-row">
     <button class="filter-btn active" onclick="setFilter('ALL')">ALL</button>
@@ -341,7 +341,6 @@
             
           </div>
           <div class="cont-no">MRSU0374959</div>
-          <div class="cont-bl">CSM ID: 294DT260817726679</div>
         </div></div><div class="day-col ">
       <div class="day-header">
         <span class="dow">수</span>
@@ -352,14 +351,12 @@
             
           </div>
           <div class="cont-no">MRKU4820043</div>
-          <div class="cont-bl">CSM ID: 258DT260904726357</div>
         </div><div class="cont-card dd " onclick="selectContainer('MIEU4025274')">
           <div class="cont-card-header">
             <span class="cont-type type-dd">DD</span>
             
           </div>
           <div class="cont-no">MIEU4025274</div>
-          <div class="cont-bl">CSM ID: 22715SUPECIS74601</div>
         </div></div><div class="day-col ">
       <div class="day-header">
         <span class="dow">목</span>
@@ -370,14 +367,12 @@
             
           </div>
           <div class="cont-no">CAAU5980289</div>
-          <div class="cont-bl">CSM ID: 21072SUPECIS75793</div>
         </div><div class="cont-card hf " onclick="selectContainer('MRSU2805377')">
           <div class="cont-card-header">
             <span class="cont-type type-hf">HF</span>
             
           </div>
           <div class="cont-no">MRSU2805377</div>
-          <div class="cont-bl">CSM ID: 258DT260824726627</div>
         </div></div><div class="day-col ">
       <div class="day-header">
         <span class="dow">금</span>
@@ -388,14 +383,12 @@
             
           </div>
           <div class="cont-no">MIEU4026408</div>
-          <div class="cont-bl">CSM ID: 294DT260826726667</div>
         </div><div class="cont-card dd " onclick="selectContainer('MIEU4250531')">
           <div class="cont-card-header">
             <span class="cont-type type-dd">DD</span>
             
           </div>
           <div class="cont-no">MIEU4250531</div>
-          <div class="cont-bl">CSM ID: 22715SUPECIS74800</div>
         </div></div><div class="day-col ">
       <div class="day-header">
         <span class="dow">토</span>
@@ -406,21 +399,18 @@
             
           </div>
           <div class="cont-no">HLHU8363061</div>
-          <div class="cont-bl">CSM ID: 21072SUPECIS76473</div>
         </div><div class="cont-card hf active" onclick="selectContainer('MRKU5905253')">
           <div class="cont-card-header">
             <span class="cont-type type-hf">HF</span>
             
           </div>
           <div class="cont-no">MRKU5905253</div>
-          <div class="cont-bl">CSM ID: 258DT260901726134</div>
         </div><div class="cont-card dd " onclick="selectContainer('MIEU4026136')">
           <div class="cont-card-header">
             <span class="cont-type type-dd">DD</span>
             
           </div>
           <div class="cont-no">MIEU4026136</div>
-          <div class="cont-bl">CSM ID: 22715SUPECIS74434</div>
         </div></div><div class="day-col ">
       <div class="day-header">
         <span class="dow">일</span>
@@ -431,14 +421,12 @@
             
           </div>
           <div class="cont-no">MIEU4055031</div>
-          <div class="cont-bl">CSM ID: 21072SUPECIS75985</div>
         </div><div class="cont-card hf " onclick="selectContainer('MIEU4248386')">
           <div class="cont-card-header">
             <span class="cont-type type-hf">HF</span>
             
           </div>
           <div class="cont-no">MIEU4248386</div>
-          <div class="cont-bl">CSM ID: 258DT260904726418</div>
         </div></div><div class="day-col ">
       <div class="day-header">
         <span class="dow">월</span>
@@ -1392,12 +1380,9 @@ let acItems = [];
 let acSel = -1;
 
 // ── Init ──
-const today = new Date();
-const todayText = today.toLocaleDateString('ko-KR');
-
 document.addEventListener('DOMContentLoaded', () => {
   document.getElementById('todayLabel').textContent =
-    'Today: ' + todayText;
+    'Today: ' + new Date('2026-10-13').toLocaleDateString('ko-KR');
   buildKPI();
   buildWeek();
 });
@@ -1411,7 +1396,7 @@ function buildKPI() {
   let html = `<div class="kpi-card">
     <div class="kpi-label">이번 주 전체 컨테이너</div>
     <div class="kpi-value">${weekContainers.length}</div>
-    <div class="kpi-sub">${todayText}</div>
+
   </div>`;
 
   types.forEach((t,i)=>{
@@ -1429,12 +1414,9 @@ function buildKPI() {
 // ── Week Grid ──
 const DAYS = ['일','월','화','수','목','금','토'];
 const DATES = [];
-const periodStart = new Date(today);
-periodStart.setHours(0,0,0,0);
-periodStart.setDate(periodStart.getDate() - periodStart.getDay());
-for(let i=0;i<14;i++){
-  const d = new Date(periodStart);
-  d.setDate(periodStart.getDate()+i);
+for(let i=0;i<7;i++){
+  const d = new Date('2026-10-13');
+  d.setDate(d.getDate()+i);
   DATES.push(d);
 }
 
@@ -1445,11 +1427,11 @@ function buildWeek() {
 
   let html = '';
   DATES.forEach((d,idx)=>{
-    const dateStr = [d.getFullYear(), String(d.getMonth()+1).padStart(2,'0'), String(d.getDate()).padStart(2,'0')].join('-');
+    const dateStr = d.toISOString().slice(0,10);
     const dow = DAYS[d.getDay()];
     const mo  = d.getMonth()+1;
     const da  = d.getDate();
-    const isToday = dateStr === [today.getFullYear(), String(today.getMonth()+1).padStart(2,'0'), String(today.getDate()).padStart(2,'0')].join('-');
+    const isToday = idx===0;
     const dayCont = filtered.filter(c=>c.rcvDate===dateStr);
 
     html += `<div class="day-col ${isToday?'today':''}">
@@ -1472,8 +1454,8 @@ function buildWeek() {
           <div class="cont-card-header">
             <span class="cont-type type-${typeLow}">${c.type}</span>
             ${flagHtml}
-            <span class="cont-no">${c.container}</span>
           </div>
+          <div class="cont-no">${c.container}</div>
         </div>`;
       });
     }
