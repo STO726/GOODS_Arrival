@@ -163,7 +163,7 @@
   <div class="kpi-row" id="kpiRow"><div class="kpi-card">
     <div class="kpi-label">이번 주 전체 컨테이너</div>
     <div class="kpi-value">12</div>
-
+    <div class="kpi-sub">7/10 ~ 7/16</div>
   </div><div class="kpi-card lf">
       <div class="kpi-label">LF 컨테이너</div>
       <div class="kpi-value">2</div>
@@ -341,6 +341,7 @@
             
           </div>
           <div class="cont-no">MRSU0374959</div>
+          <div class="cont-bl">CSM ID: 294DT260817726679</div>
         </div></div><div class="day-col ">
       <div class="day-header">
         <span class="dow">수</span>
@@ -351,12 +352,14 @@
             
           </div>
           <div class="cont-no">MRKU4820043</div>
+          <div class="cont-bl">CSM ID: 258DT260904726357</div>
         </div><div class="cont-card dd " onclick="selectContainer('MIEU4025274')">
           <div class="cont-card-header">
             <span class="cont-type type-dd">DD</span>
             
           </div>
           <div class="cont-no">MIEU4025274</div>
+          <div class="cont-bl">CSM ID: 22715SUPECIS74601</div>
         </div></div><div class="day-col ">
       <div class="day-header">
         <span class="dow">목</span>
@@ -367,12 +370,14 @@
             
           </div>
           <div class="cont-no">CAAU5980289</div>
+          <div class="cont-bl">CSM ID: 21072SUPECIS75793</div>
         </div><div class="cont-card hf " onclick="selectContainer('MRSU2805377')">
           <div class="cont-card-header">
             <span class="cont-type type-hf">HF</span>
             
           </div>
           <div class="cont-no">MRSU2805377</div>
+          <div class="cont-bl">CSM ID: 258DT260824726627</div>
         </div></div><div class="day-col ">
       <div class="day-header">
         <span class="dow">금</span>
@@ -383,12 +388,14 @@
             
           </div>
           <div class="cont-no">MIEU4026408</div>
+          <div class="cont-bl">CSM ID: 294DT260826726667</div>
         </div><div class="cont-card dd " onclick="selectContainer('MIEU4250531')">
           <div class="cont-card-header">
             <span class="cont-type type-dd">DD</span>
             
           </div>
           <div class="cont-no">MIEU4250531</div>
+          <div class="cont-bl">CSM ID: 22715SUPECIS74800</div>
         </div></div><div class="day-col ">
       <div class="day-header">
         <span class="dow">토</span>
@@ -399,18 +406,21 @@
             
           </div>
           <div class="cont-no">HLHU8363061</div>
+          <div class="cont-bl">CSM ID: 21072SUPECIS76473</div>
         </div><div class="cont-card hf active" onclick="selectContainer('MRKU5905253')">
           <div class="cont-card-header">
             <span class="cont-type type-hf">HF</span>
             
           </div>
           <div class="cont-no">MRKU5905253</div>
+          <div class="cont-bl">CSM ID: 258DT260901726134</div>
         </div><div class="cont-card dd " onclick="selectContainer('MIEU4026136')">
           <div class="cont-card-header">
             <span class="cont-type type-dd">DD</span>
             
           </div>
           <div class="cont-no">MIEU4026136</div>
+          <div class="cont-bl">CSM ID: 22715SUPECIS74434</div>
         </div></div><div class="day-col ">
       <div class="day-header">
         <span class="dow">일</span>
@@ -421,12 +431,14 @@
             
           </div>
           <div class="cont-no">MIEU4055031</div>
+          <div class="cont-bl">CSM ID: 21072SUPECIS75985</div>
         </div><div class="cont-card hf " onclick="selectContainer('MIEU4248386')">
           <div class="cont-card-header">
             <span class="cont-type type-hf">HF</span>
             
           </div>
           <div class="cont-no">MIEU4248386</div>
+          <div class="cont-bl">CSM ID: 258DT260904726418</div>
         </div></div><div class="day-col ">
       <div class="day-header">
         <span class="dow">월</span>
@@ -1396,7 +1408,7 @@ function buildKPI() {
   let html = `<div class="kpi-card">
     <div class="kpi-label">이번 주 전체 컨테이너</div>
     <div class="kpi-value">${weekContainers.length}</div>
-
+    <div class="kpi-sub">7/10 ~ 7/16</div>
   </div>`;
 
   types.forEach((t,i)=>{
@@ -1456,6 +1468,7 @@ function buildWeek() {
             ${flagHtml}
           </div>
           <div class="cont-no">${c.container}</div>
+          <div class="cont-bl">CSM ID: ${c.csmId || '-'}</div>
         </div>`;
       });
     }
