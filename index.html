@@ -154,7 +154,7 @@
 <div class="header">
   <div>🚢</div>
   <h1>Logistics Dashboard</h1>
-  <span id="todayLabel">Today: 2026. 11. 17....................................................</span>
+  <span id="todayLabel">Today: 2026. 11. 17.</span>
 </div>
 
 <div class="main">
@@ -162,23 +162,21 @@
   <!-- KPI Row -->
   <div class="kpi-row" id="kpiRow"><div class="kpi-card">
     <div class="kpi-label">이번 주 전체 컨테이너</div>
-    <div class="kpi-value">12</div>
+    <div class="kpi-value">4</div>
     <div class="kpi-sub">11/17 ~ 11/23</div>
   </div><div class="kpi-card lf">
-      <div class="kpi-label">LF 컨테이너</div>
-      <div class="kpi-value">2</div>
-      <div class="kpi-sub">컨테이너</div>
-    </div><div class="kpi-card hf">
-      <div class="kpi-label">HF 컨테이너</div>
-      <div class="kpi-value">4</div>
-      <div class="kpi-sub">컨테이너</div>
-    </div><div class="kpi-card dd">
-      <div class="kpi-label">DD 컨테이너</div>
-      <div class="kpi-value">6</div>
-      <div class="kpi-sub">컨테이너</div>
-    </div></div>
-
-
+    <div class="kpi-label">LF 컨테이너</div>
+    <div class="kpi-value">0</div>
+    <div class="kpi-sub">컨테이너</div>
+  </div><div class="kpi-card hf">
+    <div class="kpi-label">HF 컨테이너</div>
+    <div class="kpi-value">0</div>
+    <div class="kpi-sub">컨테이너</div>
+  </div><div class="kpi-card dd">
+    <div class="kpi-label">DD 컨테이너</div>
+    <div class="kpi-value">4</div>
+    <div class="kpi-sub">컨테이너</div>
+  </div></div>
 
   <!-- Article Search -->
   <div class="section-title">🔍 아티클 번호 검색</div>
@@ -331,122 +329,66 @@
     <button class="filter-btn dd" onclick="setFilter('DD')">DD</button>
   </div>
 
-  <div class="week-grid" id="weekGrid"><div class="day-col today">
+  <div class="week-grid" id="weekGrid"><div class="day-col today" data-date="2026-11-17">
       <div class="day-header">
         <span class="dow">화</span>
-        <span>10/13</span>
-      </div><div class="cont-card lf " onclick="selectContainer('MRSU0374959')">
-          <div class="cont-card-header">
-            <span class="cont-type type-lf">LF</span>
-            
-          </div>
-          <div class="cont-no">MRSU0374959</div>
-          <div class="cont-bl">CSM ID: 294DT260817726679</div>
-        </div></div><div class="day-col ">
+        <span>11/17</span>
+      </div><div class="no-cont">-</div></div><div class="day-col " data-date="2026-11-18">
       <div class="day-header">
         <span class="dow">수</span>
-        <span>10/14</span>
-      </div><div class="cont-card hf " onclick="selectContainer('MRKU4820043')">
-          <div class="cont-card-header">
-            <span class="cont-type type-hf">HF</span>
-            
-          </div>
-          <div class="cont-no">MRKU4820043</div>
-          <div class="cont-bl">CSM ID: 258DT260904726357</div>
-        </div><div class="cont-card dd " onclick="selectContainer('MIEU4025274')">
+        <span>11/18</span>
+      </div><div class="cont-card dd " onclick="selectContainer('FFAU6092033')">
           <div class="cont-card-header">
             <span class="cont-type type-dd">DD</span>
             
           </div>
-          <div class="cont-no">MIEU4025274</div>
-          <div class="cont-bl">CSM ID: 22715SUPECIS74601</div>
-        </div></div><div class="day-col ">
+          <div class="cont-no">FFAU6092033</div>
+          <div class="cont-bl">CSM ID: 22715SUPECIS75759</div>
+        </div></div><div class="day-col " data-date="2026-11-19">
       <div class="day-header">
         <span class="dow">목</span>
-        <span>10/15</span>
-      </div><div class="cont-card dd " onclick="selectContainer('CAAU5980289')">
+        <span>11/19</span>
+      </div><div class="cont-card dd " onclick="selectContainer('MRSU3048956')">
           <div class="cont-card-header">
             <span class="cont-type type-dd">DD</span>
             
           </div>
-          <div class="cont-no">CAAU5980289</div>
-          <div class="cont-bl">CSM ID: 21072SUPECIS75793</div>
-        </div><div class="cont-card hf " onclick="selectContainer('MRSU2805377')">
-          <div class="cont-card-header">
-            <span class="cont-type type-hf">HF</span>
-            
-          </div>
-          <div class="cont-no">MRSU2805377</div>
-          <div class="cont-bl">CSM ID: 258DT260824726627</div>
-        </div></div><div class="day-col ">
+          <div class="cont-no">MRSU3048956</div>
+          <div class="cont-bl">CSM ID: 19720SUPECIS215206</div>
+        </div></div><div class="day-col " data-date="2026-11-20">
       <div class="day-header">
         <span class="dow">금</span>
-        <span>10/16</span>
-      </div><div class="cont-card lf " onclick="selectContainer('MIEU4026408')">
-          <div class="cont-card-header">
-            <span class="cont-type type-lf">LF</span>
-            
-          </div>
-          <div class="cont-no">MIEU4026408</div>
-          <div class="cont-bl">CSM ID: 294DT260826726667</div>
-        </div><div class="cont-card dd " onclick="selectContainer('MIEU4250531')">
+        <span>11/20</span>
+      </div><div class="cont-card dd " onclick="selectContainer('CAJU7380844')">
           <div class="cont-card-header">
             <span class="cont-type type-dd">DD</span>
             
           </div>
-          <div class="cont-no">MIEU4250531</div>
-          <div class="cont-bl">CSM ID: 22715SUPECIS74800</div>
-        </div></div><div class="day-col ">
+          <div class="cont-no">CAJU7380844</div>
+          <div class="cont-bl">CSM ID: 19720SUPECIS215419</div>
+        </div><div class="cont-card dd " onclick="selectContainer('MVIU0015032')">
+          <div class="cont-card-header">
+            <span class="cont-type type-dd">DD</span>
+            
+          </div>
+          <div class="cont-no">MVIU0015032</div>
+          <div class="cont-bl">CSM ID: 21072SUPECIS76821</div>
+        </div></div><div class="day-col " data-date="2026-11-21">
       <div class="day-header">
         <span class="dow">토</span>
-        <span>10/17</span>
-      </div><div class="cont-card dd " onclick="selectContainer('HLHU8363061')">
-          <div class="cont-card-header">
-            <span class="cont-type type-dd">DD</span>
-            
-          </div>
-          <div class="cont-no">HLHU8363061</div>
-          <div class="cont-bl">CSM ID: 21072SUPECIS76473</div>
-        </div><div class="cont-card hf active" onclick="selectContainer('MRKU5905253')">
-          <div class="cont-card-header">
-            <span class="cont-type type-hf">HF</span>
-            
-          </div>
-          <div class="cont-no">MRKU5905253</div>
-          <div class="cont-bl">CSM ID: 258DT260901726134</div>
-        </div><div class="cont-card dd " onclick="selectContainer('MIEU4026136')">
-          <div class="cont-card-header">
-            <span class="cont-type type-dd">DD</span>
-            
-          </div>
-          <div class="cont-no">MIEU4026136</div>
-          <div class="cont-bl">CSM ID: 22715SUPECIS74434</div>
-        </div></div><div class="day-col ">
+        <span>11/21</span>
+      </div><div class="no-cont">-</div></div><div class="day-col " data-date="2026-11-22">
       <div class="day-header">
         <span class="dow">일</span>
-        <span>10/18</span>
-      </div><div class="cont-card dd " onclick="selectContainer('MIEU4055031')">
-          <div class="cont-card-header">
-            <span class="cont-type type-dd">DD</span>
-            
-          </div>
-          <div class="cont-no">MIEU4055031</div>
-          <div class="cont-bl">CSM ID: 21072SUPECIS75985</div>
-        </div><div class="cont-card hf " onclick="selectContainer('MIEU4248386')">
-          <div class="cont-card-header">
-            <span class="cont-type type-hf">HF</span>
-            
-          </div>
-          <div class="cont-no">MIEU4248386</div>
-          <div class="cont-bl">CSM ID: 258DT260904726418</div>
-        </div></div><div class="day-col ">
+        <span>11/22</span>
+      </div><div class="no-cont">-</div></div><div class="day-col " data-date="2026-11-23">
       <div class="day-header">
         <span class="dow">월</span>
-        <span>10/19</span>
+        <span>11/23</span>
       </div><div class="no-cont">-</div></div></div>
 
   <!-- Article List Panel (shown on container click) -->
-  <div class="article-panel visible" id="articlePanel">
+  <div class="article-panel" id="articlePanel">
     <div class="article-panel-header">
       <div>
         <div class="article-panel-title" id="panelTitle">📦 MRKU5905253  (HF)</div>
@@ -1536,7 +1478,7 @@ function buildWeek() {
     const isToday = idx===0;
     const dayCont = filtered.filter(c=>c.rcvDate===dateStr);
 
-    html += `<div class="day-col ${isToday?'today':''}">
+    html += `<div class="day-col ${isToday?'today':''}" data-date="${dateStr}">
       <div class="day-header">
         <span class="dow">${dow}</span>
         <span>${mo}/${da}</span>
